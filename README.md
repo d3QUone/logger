@@ -4,8 +4,7 @@ A simple and flexible module - wrapper on default Python's logging module with c
 
 ### Demos
 
-Logger is used in my [**rates**](https://github.com/d3QUone/rates) project:
-
+Logger is currently used in my [**rates**](https://github.com/d3QUone/rates) project:
 
 ![Rates-demo](assets/latest.png)
 
