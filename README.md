@@ -62,7 +62,7 @@ Interface `colorize(color, data)`, available colors are
 'pink', 'blue', 'yellow', 'green', 'red', 'underline', 'bold'
 ```
 
-Also check out [the example project with Logger](examples/app.py))
+Also check out [the example project with Logger](examples/app.py)
 
 ### Customization
 
@@ -107,6 +107,10 @@ log.info("received message", {
 ```
 
 ![The output now](assets/custom_format.png)
+
+### Updates
+
+* 1.0 first release with one example
 
 -----
 

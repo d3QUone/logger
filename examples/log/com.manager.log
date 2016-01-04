@@ -1,0 +1,41 @@
+2016-01-04 18:21:04,821 | ERROR | User 'good' already exists
+2016-01-04 18:21:06,110 | ERROR | User 'good' already exists
+2016-01-04 18:21:44,195 | ERROR | User 'zhooli' already exists
+2016-01-04 18:21:45,243 | ERROR | User 'zhooli' already exists
+2016-01-04 18:55:03,718 | ERROR | User zhooli already exists
+2016-01-04 19:10:33,774 | ERROR | User user1 already exists
+2016-01-04 19:11:54,699 | INFO | User user1 added to storage
+2016-01-04 19:11:54,703 | INFO | User user2 added to storage
+2016-01-04 19:12:06,892 | INFO | User user1 already exists
+2016-01-04 19:12:45,284 | INFO | User user1 added to storage
+2016-01-04 19:12:45,287 | INFO | User user2 added to storage
+2016-01-04 19:15:03,057 | INFO | User user1 added to storage
+2016-01-04 19:15:03,060 | INFO | User user2 added to storage
+2016-01-04 19:15:41,509 | INFO | User user1 added to storage
+2016-01-04 19:15:41,513 | INFO | User user2 added to storage
+2016-01-04 19:16:06,335 | INFO | User user1 added to storage
+2016-01-04 19:16:06,339 | INFO | User user2 added to storage
+2016-01-04 19:57:43,277 | INFO | User user1 added to storage
+2016-01-04 19:57:43,283 | INFO | User user2 added to storage
+2016-01-04 19:57:43,287 | INFO | User user3 added to storage
+2016-01-04 19:57:43,290 | INFO | User user1 already exists
+2016-01-04 19:57:43,293 | INFO | User user2 already exists
+2016-01-04 19:57:43,295 | INFO | User user3 already exists
+2016-01-04 19:58:06,822 | INFO | User user1 added to storage
+2016-01-04 19:58:06,825 | INFO | User user2 added to storage
+2016-01-04 19:58:06,828 | INFO | User user3 added to storage
+2016-01-04 19:58:06,831 | INFO | User user1 already exists
+2016-01-04 19:58:06,833 | INFO | User user2 already exists
+2016-01-04 19:58:06,836 | INFO | User user3 already exists
+2016-01-04 19:58:33,732 | INFO | User user1 added to storage
+2016-01-04 19:58:33,735 | INFO | User user2 added to storage
+2016-01-04 19:58:33,738 | INFO | User user3 added to storage
+2016-01-04 19:58:33,741 | INFO | User user1 already exists
+2016-01-04 19:58:33,744 | INFO | User user2 already exists
+2016-01-04 19:58:33,747 | INFO | User user3 already exists
+2016-01-04 22:19:59,855 | INFO | User user1 added to storage
+2016-01-04 22:19:59,860 | INFO | User user2 added to storage
+2016-01-04 22:19:59,863 | INFO | User user3 added to storage
+2016-01-04 22:19:59,866 | INFO | User user1 already exists
+2016-01-04 22:19:59,869 | INFO | User user2 already exists
+2016-01-04 22:19:59,873 | INFO | User user3 already exists

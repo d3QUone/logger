@@ -1,0 +1,4 @@
+falcon
+git+https://github.com/d3QUone/logger
+requests
+gunicorn
