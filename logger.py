@@ -21,6 +21,7 @@ COLORS = {
     'bold': '\033[1m',
     'reset': '\033[0m',
 }
+ALL_COLORS = COLORS.keys()
 
 
 class ColorizedFormatter(logging.Formatter):
@@ -32,7 +33,7 @@ class ColorizedFormatter(logging.Formatter):
 
     def format(self, record):
         record = logging.Formatter.format(self, record)
-        for name in COLORS.keys():
+        for name in ALL_COLORS:
             if "{{ %s }}" % name in record:
                 if self.use_color:
                     record = record.replace("{{ %s }}" % name, COLORS[name])
@@ -70,7 +71,7 @@ class Logger(object):
     @classmethod
     def colorize(cls, color, data):
         """Colorize output"""
-        if color in COLORS.keys():
+        if color in ALL_COLORS:
             return "{{ %s }}%s{{ reset }}" % (color, data)
         else:
             return "%s" % data
