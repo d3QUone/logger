@@ -20,7 +20,7 @@ Logger is used in my [rates](https://github.com/d3QUone/rates) project:
 
 (also check out [the provided example](examples/app.py)) 
 
-1. Import module and create an instance:
+1 - Import module and create an instance:
 
 ```python
 from logger import Logger
@@ -30,7 +30,7 @@ log = Logger("com.project_name")
 
 In current example Logger will write logs in `log/com.project_name.log`
 
-2. Log something:
+2 - Log something:
 
 ```python
 log.info("Server started - OK")
@@ -45,7 +45,7 @@ Interface `info(msg, extra=None)`, where `msg` is a plain string. `extra` is dic
 
 Currently there are wrappers for `warn`, `info`, `debug`, `error`
 
-3. Colorize the stdout:
+3 - Colorize the stdout:
 
 ```python
 x = 0.01
@@ -84,7 +84,6 @@ class MyLogger(Logger):
 log = MyLogger("com.web.2")
 
 # ...
-
 ```
 
 <a name="format"></a> You can even change the `DEFAULT_FORMAT` of messages following the `logging` [rules](https://docs.python.org/2/library/logging.html#logrecord-attributes) e.g.:
@@ -102,8 +101,9 @@ log = MyLogger("com.web.2")
 log.info("received message", {
     "user_name": "Mike Dow"
 })
-
 ```
+
+![The output now](assets/custom_format.png)
 
 -----
 
