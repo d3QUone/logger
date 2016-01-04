@@ -1,5 +1,6 @@
-
 ### Description
+
+Logger - is a simple and flexible wrapper on Python's logging module with coloring output
 
 ### Demos
 
@@ -37,7 +38,7 @@ log.info("Server started - OK")
 try:
     1/0
 except Exception as e:
-    log.error("Caught bug '%s' in '%s'", (e, \_\_name\_\_)
+    log.error("Caught bug '%s' in '%s'", (e, __name__)
 ```
 
 Interface `info(msg, extra=None)`, where `msg` can be a plain string or a string with parameters `%s`. `extra` is a tuple
@@ -54,7 +55,7 @@ log.warn("The request is pending for {} seconds from {}".format(
 ))
 ```
 
-Interface `colorize(color, data)`, available colors are 'pink', 'blue', 'yellow', 'green', 'red', 'underline', 'bold'
+Interface `colorize(color, data)`, available colors are ```python 'pink', 'blue', 'yellow', 'green', 'red', 'underline', 'bold'```
 
 ### Customization
 
