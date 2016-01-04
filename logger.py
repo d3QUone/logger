@@ -67,6 +67,14 @@ class Logger(object):
         self.logger.addHandler(self.syslog)
         self.logger.addHandler(self.file_handler)
 
+    @classmethod
+    def colorize(cls, color, data):
+        """Colorize output"""
+        if color in COLORS.keys():
+            return "{{ %s }}%s{{ reset }}" % (color, data)
+        else:
+            return "%s" % data
+
     def info(self, msg, extra=None):
         self.logger.info(msg, extra=extra)
 
