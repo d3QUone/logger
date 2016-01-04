@@ -38,10 +38,10 @@ log.info("Server started - OK")
 try:
     1/0
 except Exception as e:
-    log.error("Caught bug '%s' in '%s'", (e, __name__)
+    log.error("Caught bug '%s' in '%s'" % (e, __name__))
 ```
 
-Interface `info(msg, extra=None)`, where `msg` can be a plain string or a string with parameters `%s`. `extra` is a tuple
+Interface `info(msg, extra=None)`, where `msg` is a plain string. `extra` is dict, will be [explained later](#format)
 
 Currently there are wrappers for `warn`, `info`, `debug`, `error`
 
@@ -55,12 +55,56 @@ log.warn("The request is pending for {} seconds from {}".format(
 ))
 ```
 
-Interface `colorize(color, data)`, available colors are ```python 'pink', 'blue', 'yellow', 'green', 'red', 'underline', 'bold'```
+Interface `colorize(color, data)`, available colors are 
+
+```python 
+'pink', 'blue', 'yellow', 'green', 'red', 'underline', 'bold'
+```
 
 ### Customization
 
-You can change the default level or the default directory for storing logs: ... 
+The default values are:
+
+```python
+DEFAULT_FORMAT = "%(asctime)s | %(levelname)s | %(message)s"
+DEFAULT_LEVEL = INFO
+BASE_DIR = "log"
+```
+
+You can change the default level or the default directory for storing logs by inheriting the `Logger`:
+
+```python
+from logger import Logger, ERROR
+
+class MyLogger(Logger):
+    DEFAULT_LEVEL = ERROR
+    BASE_DIR = "/var/log/my.app.dir"
+
+
+log = MyLogger("com.web.2")
+
+# ...
+
+```
+
+<a name="format"></a> You can even change the `DEFAULT_FORMAT` of messages following the `logging` [rules](https://docs.python.org/2/library/logging.html#logrecord-attributes) e.g.:
+
+```python
+from logger import Logger, ERROR
+
+class MyLogger(Logger):
+    DEFAULT_FORMAT = "%(asctime)s | %(levelname)s | %(user_name)s | %(message)s"
+
+
+log = MyLogger("com.web.2")
+
+# now you have to pass an 'extra' parameter
+log.info("received message", {
+    "user_name": "Mike Dow"
+})
+
+```
 
 -----
 
-Vladimir Kasatkin
+Copyright 2016 Vladimir Kasatkin
