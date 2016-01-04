@@ -1,10 +1,11 @@
-### Description
+## Logger
 
-Logger - is a simple and flexible wrapper on Python's logging module with coloring output
+A simple and flexible module - wrapper on default Python's logging module with coloring output
 
 ### Demos
 
-Logger is used in my [rates](https://github.com/d3QUone/rates) project:
+Logger is used in my [**rates**](https://github.com/d3QUone/rates) project:
+
 
 ![Rates-demo](assets/latest.png)
 
@@ -18,8 +19,6 @@ Logger is used in my [rates](https://github.com/d3QUone/rates) project:
 
 ### How to use
 
-(also check out [the provided example](examples/app.py)) 
-
 1 - Import module and create an instance:
 
 ```python
@@ -27,6 +26,8 @@ from logger import Logger
 
 log = Logger("com.project_name")
 ```
+
+Interface `Logger(name)`, where `name` is file name. By default logs be in `log/<name>.log`
 
 In current example Logger will write logs in `log/com.project_name.log`
 
@@ -60,6 +61,8 @@ Interface `colorize(color, data)`, available colors are
 ```python 
 'pink', 'blue', 'yellow', 'green', 'red', 'underline', 'bold'
 ```
+
+Also check out [the example project with Logger](examples/app.py))
 
 ### Customization
 
