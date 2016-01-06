@@ -1,6 +1,6 @@
 ## Logger
 
-A simple and flexible module - wrapper on default Python's logging module with coloring output
+A light wrapper on Python's logging module with cool colorizing outputs and easy division on sub-logs
 
 ### Demos
 
@@ -10,11 +10,15 @@ Logger is currently used in my [**rates**](https://github.com/d3QUone/rates) pro
 
 ### Install
  
-`pip install git+https://github.com/d3QUone/logger`
+```bash
+$ pip install git+https://github.com/d3QUone/logger
+```
 
 ### Update
 
-`pip install --upgrade git+https://github.com/d3QUone/logger`
+```bash
+$ pip install --upgrade git+https://github.com/d3QUone/logger
+```
 
 ### How to use
 
